@@ -1,47 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <EntityRelationship Name="fin_BankAccount_fin_Supplier_fin_Supplier">
-    <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>1.0.0.0</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>fin_BankAccount</ReferencingEntityName>
-    <ReferencedEntityName>fin_Supplier</ReferencedEntityName>
-    <CascadeAssign>NoCascade</CascadeAssign>
-    <CascadeDelete>RemoveLink</CascadeDelete>
-    <CascadeArchive>RemoveLink</CascadeArchive>
-    <CascadeReparent>NoCascade</CascadeReparent>
-    <CascadeShare>NoCascade</CascadeShare>
-    <CascadeUnshare>NoCascade</CascadeUnshare>
-    <CascadeRollupView>NoCascade</CascadeRollupView>
-    <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
-    <ReferencingAttributeName>fin_Supplier</ReferencingAttributeName>
-    <RelationshipDescription>
-      <Descriptions>
-        <Description description="" languagecode="1033" />
-      </Descriptions>
-    </RelationshipDescription>
-    <EntityRelationshipRoles>
-      <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
-        <NavPaneArea>Details</NavPaneArea>
-        <NavPaneOrder>10000</NavPaneOrder>
-        <NavigationPropertyName>fin_Supplier</NavigationPropertyName>
-        <RelationshipRoleType>1</RelationshipRoleType>
-      </EntityRelationshipRole>
-      <EntityRelationshipRole>
-        <NavigationPropertyName>fin_BankAccount_fin_Supplier_fin_Supplier</NavigationPropertyName>
-        <RelationshipRoleType>0</RelationshipRoleType>
-      </EntityRelationshipRole>
-    </EntityRelationshipRoles>
-  </EntityRelationship>
-  <EntityRelationship Name="fin_expense_Supplier_fin_supplier">
+  <EntityRelationship Name="fin_expense_FiscalPeriod_fin_fiscalperiod">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>fin_Expense</ReferencingEntityName>
-    <ReferencedEntityName>fin_Supplier</ReferencedEntityName>
+    <ReferencedEntityName>fin_FiscalPeriod</ReferencedEntityName>
     <CascadeAssign>NoCascade</CascadeAssign>
     <CascadeDelete>RemoveLink</CascadeDelete>
     <CascadeArchive>RemoveLink</CascadeArchive>
@@ -50,7 +15,7 @@
     <CascadeUnshare>NoCascade</CascadeUnshare>
     <CascadeRollupView>NoCascade</CascadeRollupView>
     <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
-    <ReferencingAttributeName>fin_Supplier</ReferencingAttributeName>
+    <ReferencingAttributeName>fin_FiscalPeriod</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
         <Description description="" languagecode="1033" />
@@ -61,22 +26,22 @@
         <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
-        <NavigationPropertyName>fin_Supplier</NavigationPropertyName>
+        <NavigationPropertyName>fin_FiscalPeriod</NavigationPropertyName>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>fin_expense_Supplier_fin_supplier</NavigationPropertyName>
+        <NavigationPropertyName>fin_expense_FiscalPeriod_fin_fiscalperiod</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
-  <EntityRelationship Name="fin_invoice_Supplier_fin_supplier">
+  <EntityRelationship Name="fin_invoice_FiscalPeriod_fin_fiscalperiod">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>fin_Invoice</ReferencingEntityName>
-    <ReferencedEntityName>fin_Supplier</ReferencedEntityName>
+    <ReferencedEntityName>fin_FiscalPeriod</ReferencedEntityName>
     <CascadeAssign>NoCascade</CascadeAssign>
     <CascadeDelete>RemoveLink</CascadeDelete>
     <CascadeArchive>RemoveLink</CascadeArchive>
@@ -85,7 +50,7 @@
     <CascadeUnshare>NoCascade</CascadeUnshare>
     <CascadeRollupView>NoCascade</CascadeRollupView>
     <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
-    <ReferencingAttributeName>fin_Supplier</ReferencingAttributeName>
+    <ReferencingAttributeName>fin_FiscalPeriod</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
         <Description description="" languagecode="1033" />
@@ -96,22 +61,22 @@
         <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
-        <NavigationPropertyName>fin_Supplier</NavigationPropertyName>
+        <NavigationPropertyName>fin_FiscalPeriod</NavigationPropertyName>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>fin_invoice_Supplier_fin_supplier</NavigationPropertyName>
+        <NavigationPropertyName>fin_invoice_FiscalPeriod_fin_fiscalperiod</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
-  <EntityRelationship Name="fin_payment_Supplier_fin_supplier">
+  <EntityRelationship Name="fin_revenue_FiscalPeriod_fin_fiscalperiod">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>fin_Payment</ReferencingEntityName>
-    <ReferencedEntityName>fin_Supplier</ReferencedEntityName>
+    <ReferencingEntityName>fin_Revenue</ReferencingEntityName>
+    <ReferencedEntityName>fin_FiscalPeriod</ReferencedEntityName>
     <CascadeAssign>NoCascade</CascadeAssign>
     <CascadeDelete>RemoveLink</CascadeDelete>
     <CascadeArchive>RemoveLink</CascadeArchive>
@@ -120,7 +85,7 @@
     <CascadeUnshare>NoCascade</CascadeUnshare>
     <CascadeRollupView>NoCascade</CascadeRollupView>
     <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
-    <ReferencingAttributeName>fin_Supplier</ReferencingAttributeName>
+    <ReferencingAttributeName>fin_FiscalPeriod</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
         <Description description="" languagecode="1033" />
@@ -131,11 +96,11 @@
         <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
-        <NavigationPropertyName>fin_Supplier</NavigationPropertyName>
+        <NavigationPropertyName>fin_FiscalPeriod</NavigationPropertyName>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>fin_payment_Supplier_fin_supplier</NavigationPropertyName>
+        <NavigationPropertyName>fin_revenue_FiscalPeriod_fin_fiscalperiod</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>

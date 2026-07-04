@@ -14,12 +14,16 @@
   <EntityRelationship Name="business_unit_fin_revenue" />
   <EntityRelationship Name="business_unit_fin_supplier" />
   <EntityRelationship Name="fin_bankaccount_Bank_fin_bank" />
+  <EntityRelationship Name="fin_BankAccount_fin_Supplier_fin_Supplier" />
   <EntityRelationship Name="fin_category_ParentCategory_fin_category" />
   <EntityRelationship Name="fin_expense_BankAccount_fin_bankaccount" />
   <EntityRelationship Name="fin_expense_Category_fin_category" />
+  <EntityRelationship Name="fin_expense_FiscalPeriod_fin_fiscalperiod" />
   <EntityRelationship Name="fin_expense_Supplier_fin_supplier" />
   <EntityRelationship Name="fin_fiscalperiod_FiscalYear_fin_fiscalyear" />
   <EntityRelationship Name="fin_invoice_Customer_fin_customer" />
+  <EntityRelationship Name="fin_invoice_FiscalPeriod_fin_fiscalperiod" />
+  <EntityRelationship Name="fin_invoice_Supplier_fin_supplier" />
   <EntityRelationship Name="fin_payment_BankAccount_fin_bankaccount" />
   <EntityRelationship Name="fin_payment_Invoice_fin_invoice" />
   <EntityRelationship Name="fin_payment_Supplier_fin_supplier" />
@@ -28,6 +32,7 @@
   <EntityRelationship Name="fin_revenue_BankAccount_fin_bankaccount" />
   <EntityRelationship Name="fin_revenue_Category_fin_category" />
   <EntityRelationship Name="fin_revenue_Customer_fin_customer" />
+  <EntityRelationship Name="fin_revenue_FiscalPeriod_fin_fiscalperiod" />
   <EntityRelationship Name="lk_fin_bank_createdby" />
   <EntityRelationship Name="lk_fin_bank_modifiedby" />
   <EntityRelationship Name="lk_fin_bankaccount_createdby" />
