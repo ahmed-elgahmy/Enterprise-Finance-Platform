@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{42f78392-a5ce-4c8a-9e90-1a9871a45f76}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fin_accountname" select="1" icon="1" preview="1">
+        <row name="result" id="fin_bankaccountid">
+          <cell name="fin_accountname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="fin_bankaccount">
+          <attribute name="fin_bankaccountid" />
+          <attribute name="fin_accountname" />
+          <attribute name="createdon" />
+          <order attribute="fin_accountname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="fin_accountname" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Bank Accounts" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

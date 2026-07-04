@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2494a9dc-c487-4028-ac18-0341df4ce9b7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fin_suppliername" select="1" icon="1" preview="1">
+        <row name="result" id="fin_supplierid">
+          <cell name="fin_suppliername" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="fin_supplier">
+          <attribute name="fin_supplierid" />
+          <attribute name="fin_suppliername" />
+          <attribute name="createdon" />
+          <order attribute="fin_suppliername" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Supplier Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

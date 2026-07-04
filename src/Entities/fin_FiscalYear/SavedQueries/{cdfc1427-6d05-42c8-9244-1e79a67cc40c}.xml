@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{cdfc1427-6d05-42c8-9244-1e79a67cc40c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fin_fiscalyear" select="1" icon="1" preview="1">
+        <row name="result" id="fin_fiscalyearid">
+          <cell name="fin_fiscalyear" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="fin_fiscalyear">
+          <attribute name="fin_fiscalyearid" />
+          <attribute name="fin_fiscalyear" />
+          <attribute name="createdon" />
+          <order attribute="fin_fiscalyear" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Fiscal Years" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

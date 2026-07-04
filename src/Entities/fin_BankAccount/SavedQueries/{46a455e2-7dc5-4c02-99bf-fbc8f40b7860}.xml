@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{46a455e2-7dc5-4c02-99bf-fbc8f40b7860}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fin_accountname" select="1" icon="1" preview="1">
+        <row name="result" id="fin_bankaccountid">
+          <cell name="fin_accountname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="fin_bankaccount">
+          <attribute name="fin_bankaccountid" />
+          <attribute name="fin_accountname" />
+          <attribute name="createdon" />
+          <order attribute="fin_accountname" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Bank Account Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c788569d-45e4-4f70-bfa9-18ae11881d7f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fin_customername" select="1" icon="1" preview="1">
+        <row name="result" id="fin_customerid">
+          <cell name="fin_customername" width="133" />
+          <cell name="fin_customercode" width="128" />
+          <cell name="fin_phone" width="100" />
+          <cell name="fin_address" width="100" />
+          <cell name="fin_email" width="100" />
+          <cell name="fin_creditlimit" width="110" />
+          <cell name="fin_notes" width="100" />
+          <cell name="fin_statu" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="fin_customer">
+          <attribute name="fin_customerid" />
+          <attribute name="fin_customername" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="createdon" descending="true" />
+          <attribute name="fin_phone" />
+          <attribute name="fin_address" />
+          <attribute name="fin_customercode" />
+          <attribute name="fin_email" />
+          <attribute name="fin_creditlimit" />
+          <attribute name="fin_notes" />
+          <attribute name="fin_statu" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Customers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
